@@ -1,0 +1,49 @@
+BioDockerへの道
+
+20150307 Hidemasa Bono \<bonohu@gmail.com\>
+
+遅ればせながら、Markdown勉強中なので、今回はこのスタイルでw
+
+## なぜにDocker?
+* [🐶](https://twitter.com/inut)
+	* 鼻が利く彼が何やら最近Docker推し
+* [Illumina BaseSpace developers' meeting in Japan](http://www.illuminakk.co.jp/events/seminar_japan.ilmn) (DBCLS柏 2014/10/29-30)
+* [国内版バイオハッカソン BH14.14](http://wiki.lifesciencedb.jp/mw/BH14.14) (札幌市定山渓 2015/2/2-6)
+	* リトリート的に何をやるか議論した結果、[Docker野郎Dチーム](http://wiki.lifesciencedb.jp/mw/BH14.14/Docker)結成
+
+## 動かすための準備
+
+* Get Mac
+* Install Xcode
+
+### Homebrew
+
+* git `brew install git`
+* cask `brew tap phinze/cask; brew install brew-cask`
+* vagrant `brew cask install vagrant`
+* virtualbox `brew cask install virtualbox`
+
+### coreos
+
+1. `mkdir docker`
+2. `cd docker`
+3. `https://github.com/coreos/coreos-vagrant`
+4. `cd coreos-vagrant`
+5. `vagrant up`
+6. `vagrant ssh`
+
+coreos にログインできた?
+
+### docker run test
+
+coreos> `docker run -it inutano/cmatrix`
+
+## そういうわけで自分でも書いてみた
+
+`hmmemit` in [HMMER package](http://hmmer.janelia.org/) 
+https://github.com/bonohu/hmmemit/blob/master/Dockerfile
+
+coreos> `docker run -it bonohu/hmmemit`
+
+
+
