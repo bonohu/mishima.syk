@@ -45,5 +45,19 @@ https://github.com/bonohu/hmmemit/blob/master/Dockerfile
 
 coreos> `docker run -it bonohu/hmmemit`
 
+## その後に
+
+coreos> `exit`
+`vagrant status`
+
+- まだcoreosはrunningであることがわかる
+- 再度`vagrant ssh`でcoreosに入れる
+- 終了させるには、以下の様に
+
+`vagrant halt`
+`vagrant status`
+
+poweroff になったはず。
+
 
 
