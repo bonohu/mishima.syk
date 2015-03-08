@@ -31,7 +31,7 @@ Mac上で動かすには、Xcodeを入れた上で、Homebrewをインストー�
 
 1. `mkdir docker`
 2. `cd docker`
-3. `https://github.com/coreos/coreos-vagrant`
+3. `git clone https://github.com/coreos/coreos-vagrant`
 4. `cd coreos-vagrant`
 5. `vagrant up`
 6. `vagrant ssh`
