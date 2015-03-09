@@ -31,7 +31,7 @@ Mac上で動かすには、Xcodeを入れた上で、Homebrewをインストー�
 
 1. `mkdir docker`
 2. `cd docker`
-3. `git clone https://github.com/coreos/coreos-vagrant`
+3. `https://github.com/coreos/coreos-vagrant`
 4. `cd coreos-vagrant`
 5. `vagrant up`
 6. `vagrant ssh`
@@ -49,19 +49,20 @@ https://github.com/bonohu/hmmemit/blob/master/Dockerfile
 
 coreos> `docker run -it bonohu/hmmemit`
 
+hmmemit コマンドがdocker上で動く。
+
 ## その後に
 
 coreos> `exit`
-`vagrant status`
 
-- まだcoreosはrunningであることがわかる
+でcoreosを抜ける。そして、
+
+- `vagrant status`
+	- まだcoreosはrunningであることがわかる
 - 再度`vagrant ssh`でcoreosに入れる
 - 終了させるには、以下の様に
-
-`vagrant halt`
-`vagrant status`
-
-poweroff になったはず。
+ - `vagrant halt`
+ - `vagrant status` poweroff になったはず。
 
 
 
